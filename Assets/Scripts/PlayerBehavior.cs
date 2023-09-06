@@ -23,12 +23,11 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    [SerializeField][Range(0, 1)] float LerpConstant;
     void FixedUpdate()
     {
-        if(Input.GetAxisRaw("Horizontal") != 0)
-        {
-            
-        }
+        float h = Input.GetAxisRaw("Horizontal");
+        Vector2 movement = new Vector2(h, rgbd.velocity.y);
+        rgbd.velocity = Vector2.Lerp(rgbd.velocity, movement, LerpConstant);
     }
 }
