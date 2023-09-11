@@ -5,29 +5,37 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    public Rigidbody2D rgbd = null;
-    public float speed = 1f;
-    public AudioClip coinSound;
+    public Rigidbody2D rb2d = null;
 
-    // Start is called before the first frame update
+    public float moveSpeed = 5f;
+    public float jumpPower = 10f;
+    public bool isGrounded = false;
     void Start()
     {
         
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "CollectableItem")
+        if (collision.gameObject.tag == "Platform")
         {
-            AudioEngine.instance.PlaySound(coinSound);
-            Destroy(collision.gameObject);
+            isGrounded = true;
         }
     }
 
-    [SerializeField][Range(0, 1)] float LerpConstant;
-    void FixedUpdate()
+    void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        Vector2 movement = new Vector2(h, rgbd.velocity.y);
-        rgbd.velocity = Vector2.Lerp(rgbd.velocity, movement, LerpConstant);
+
+        Vector3 Move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        transform.position += Move * Time.deltaTime * moveSpeed;
+        Jump();
+    }
+
+    void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        {
+            rb2d.AddForce(new Vector2(0f, jumpPower), ForceMode2D.Impulse);
+            isGrounded = false;
+        }
     }
 }

@@ -1219,6 +1219,7 @@ GameObject:
   - component: {fileID: 408698300}
   - component: {fileID: 408698303}
   - component: {fileID: 408698304}
+  - component: {fileID: 408698305}
   m_Layer: 0
   m_Name: DotPlayer
   m_TagString: Player
@@ -1322,7 +1323,7 @@ Transform:
   m_GameObject: {fileID: 408698299}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -445.23, y: 168.06, z: 0}
+  m_LocalPosition: {x: -445.23, y: 168.16, z: 0}
   m_LocalScale: {x: 0.088222586, y: 0.088222586, z: 0.088222586}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1367,9 +1368,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ea81874a19bf24582b37b9205e5161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rgbd: {fileID: 408698303}
-  speed: 125
-  coinSound: {fileID: 8300000, guid: 5ee71e6bfc1be2242925dc9900b0154d, type: 3}
+  rb2d: {fileID: 408698303}
+  moveSpeed: 15
+  jumpPower: 55
+  isGrounded: 0
+--- !u!61 &408698305
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408698299}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.0484648, y: -21.253384}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 39.5, y: 39.5}
+    newSize: {x: 39.5, y: 39.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.675397, y: 13.381362}
+  m_EdgeRadius: 0
 --- !u!1 &429403919
 GameObject:
   m_ObjectHideFlags: 0
@@ -4019,7 +4066,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.014385045, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4030,7 +4077,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0287701, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1560349001
 SpriteRenderer:
