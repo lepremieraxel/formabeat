@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CollectableItem
   - Platform
+  - Triangle
   layers:
   - Default
   - TransparentFX
