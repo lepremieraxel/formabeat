@@ -2,6 +2,7 @@ using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -9,12 +10,14 @@ public class GameManager : MonoBehaviour
     public GameObject cameraBorder;
     public CinemachineVirtualCamera cinemachine;
     public GameObject playButton;
+    public GameObject winText;
     public GameObject logo;
     public GameObject game;
     public GameObject background;
     public GameObject player;
     public GameObject gameOverScreen;
     private Vector3 playerStartPos;
+    public Camera postProcessingCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +57,8 @@ public class GameManager : MonoBehaviour
         game.SetActive(false);
         background.SetActive(false);
         cinemachine.m_Follow = null;
+        playButton.SetActive(false);
+        winText.SetActive(true);
     }
 
     public void Quitter()
