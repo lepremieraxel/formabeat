@@ -1274,6 +1274,9 @@ MonoBehaviour:
   background: {fileID: 0}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!1001 &132921099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1613,6 +1616,9 @@ MonoBehaviour:
   background: {fileID: 0}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!1 &159214588
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,6 +5680,9 @@ MonoBehaviour:
   background: {fileID: 0}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!1 &472031251
 GameObject:
   m_ObjectHideFlags: 0
@@ -7016,6 +7025,9 @@ MonoBehaviour:
   background: {fileID: 0}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!1 &681340488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8024,7 +8036,6 @@ GameObject:
   m_Component:
   - component: {fileID: 773656895}
   - component: {fileID: 773656894}
-  - component: {fileID: 773656893}
   - component: {fileID: 773656892}
   m_Layer: 0
   m_Name: Processing Camera
@@ -8032,7 +8043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &773656892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8093,14 +8104,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!81 &773656893
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773656891}
-  m_Enabled: 1
 --- !u!20 &773656894
 Camera:
   m_ObjectHideFlags: 0
@@ -8396,6 +8399,9 @@ MonoBehaviour:
   background: {fileID: 0}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!4 &789190968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3762253920114619059, guid: ca587655dbae34946ae62617dcabd8bf, type: 3}
@@ -8964,8 +8970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -0.0000038146973}
-  m_SizeDelta: {x: 617.2, y: 347}
+  m_AnchoredPosition: {x: -0.000030518, y: -0.0000054292}
+  m_SizeDelta: {x: 773, y: 435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &852465959
 MonoBehaviour:
@@ -13950,6 +13956,9 @@ MonoBehaviour:
   background: {fileID: 375385793}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!4 &1396868292
 Transform:
   m_ObjectHideFlags: 0
@@ -17963,6 +17972,9 @@ MonoBehaviour:
   background: {fileID: 375385793}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 0}
 --- !u!1 &1793264684
 GameObject:
   m_ObjectHideFlags: 0
@@ -18017,6 +18029,9 @@ MonoBehaviour:
   background: {fileID: 0}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!61 &1793264687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18400,6 +18415,7 @@ GameObject:
   - component: {fileID: 1826110426}
   - component: {fileID: 1826110425}
   - component: {fileID: 1826110424}
+  - component: {fileID: 1826110427}
   m_Layer: 5
   m_Name: Chrono
   m_TagString: Untagged
@@ -18423,7 +18439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 265.39594, y: 158.15749}
+  m_AnchoredPosition: {x: 341.62, y: 197}
   m_SizeDelta: {x: 89.7567, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826110424
@@ -18433,7 +18449,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826110422}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e234296bef6c7f4d8df084374acbbc2, type: 3}
   m_Name: 
@@ -18482,6 +18498,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826110422}
   m_CullTransparentMesh: 1
+--- !u!114 &1826110427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826110422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60121d4cc162f1a448be0a28f42ba45f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraBorder: {fileID: 0}
+  cinemachine: {fileID: 0}
+  playButton: {fileID: 0}
+  winText: {fileID: 0}
+  logo: {fileID: 0}
+  game: {fileID: 0}
+  background: {fileID: 0}
+  player: {fileID: 408698299}
+  gameOverScreen: {fileID: 0}
+  postProcessingCamera: {fileID: 773656891}
+  timer: 0
+  chrono: {fileID: 1826110425}
 --- !u!1 &1827780712
 GameObject:
   m_ObjectHideFlags: 0

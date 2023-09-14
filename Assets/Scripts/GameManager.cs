@@ -17,11 +17,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject gameOverScreen;
     private Vector3 playerStartPos;
-    public Camera postProcessingCamera;
+    public GameObject postProcessingCamera;
     // Start is called before the first frame update
     void Start()
     {
         playerStartPos = player.transform.position;
+        postProcessingCamera.SetActive(false);
     }
 
     // Update is called once per frame
@@ -59,6 +60,7 @@ public class GameManager : MonoBehaviour
         cinemachine.m_Follow = null;
         playButton.SetActive(false);
         winText.SetActive(true);
+        postProcessingCamera.SetActive(true);
     }
 
     public void Quitter()
