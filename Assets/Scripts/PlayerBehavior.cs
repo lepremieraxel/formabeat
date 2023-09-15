@@ -13,7 +13,7 @@ public class PlayerBehavior : MonoBehaviour
  
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Platform") || collision.gameObject.CompareTag("PlatformAnimated"))
+        if (collision.gameObject.CompareTag("Platform") || collision.gameObject.CompareTag("PlatformAnimated") || collision.gameObject.CompareTag("PlatformAnimated2") || collision.gameObject.CompareTag("PlatformAnimated3") || collision.gameObject.CompareTag("PlatformAnimated4") || collision.gameObject.CompareTag("PlatformAnimated5"))
         {
             isGrounded = true;
         }
