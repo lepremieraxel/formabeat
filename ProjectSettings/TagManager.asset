@@ -9,6 +9,7 @@ TagManager:
   - Triangle
   - backgroundShape
   - PlatformAnimated
+  - PlatformAnimated2
   layers:
   - Default
   - TransparentFX
