@@ -9,6 +9,9 @@ TagManager:
   - Triangle
   - backgroundShape
   - PlatformAnimated
+  - GameOverCollider
+  - Win
+  - Dot
   layers:
   - Default
   - TransparentFX
