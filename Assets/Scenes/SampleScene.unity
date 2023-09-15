@@ -1185,10 +1185,9 @@ GameObject:
   m_Component:
   - component: {fileID: 118835257}
   - component: {fileID: 118835258}
-  - component: {fileID: 118835259}
   m_Layer: 0
   m_Name: GameOverCollider (2)
-  m_TagString: Untagged
+  m_TagString: GameOverCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1253,30 +1252,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 30.175827, y: 2.8027954}
   m_EdgeRadius: 0
---- !u!114 &118835259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118835256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537108c05d99c8f448a8e19d405e7304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!1001 &132921099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1527,10 +1502,9 @@ GameObject:
   m_Component:
   - component: {fileID: 156030817}
   - component: {fileID: 156030818}
-  - component: {fileID: 156030819}
   m_Layer: 0
   m_Name: GameOverCollider (4)
-  m_TagString: Untagged
+  m_TagString: GameOverCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1595,30 +1569,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 96.00888, y: 2.8027954}
   m_EdgeRadius: 0
---- !u!114 &156030819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156030816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537108c05d99c8f448a8e19d405e7304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!1 &159214588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,6 +4189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 408698303}
+  gameManager: {fileID: 1396868291}
   moveSpeed: 17
   jumpPower: 55
   isGrounded: 0
@@ -5591,10 +5542,9 @@ GameObject:
   m_Component:
   - component: {fileID: 468153742}
   - component: {fileID: 468153743}
-  - component: {fileID: 468153744}
   m_Layer: 0
   m_Name: GameOverCollider (1)
-  m_TagString: Untagged
+  m_TagString: GameOverCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5659,30 +5609,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.0561523, y: 0.6290436}
   m_EdgeRadius: 0
---- !u!114 &468153744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468153741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537108c05d99c8f448a8e19d405e7304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!1 &472031251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6801,7 +6727,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649670681}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
@@ -6936,10 +6862,9 @@ GameObject:
   m_Component:
   - component: {fileID: 662572619}
   - component: {fileID: 662572620}
-  - component: {fileID: 662572621}
   m_Layer: 0
   m_Name: GameOverCollider
-  m_TagString: Untagged
+  m_TagString: GameOverCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7004,30 +6929,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 109.75482, y: 3.9978638}
   m_EdgeRadius: 0
---- !u!114 &662572621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662572618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537108c05d99c8f448a8e19d405e7304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!1 &681340488
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,7 +7682,6 @@ GameObject:
   m_Component:
   - component: {fileID: 738159724}
   - component: {fileID: 738159723}
-  - component: {fileID: 738159721}
   m_Layer: 0
   m_Name: DotI2
   m_TagString: Untagged
@@ -7789,41 +7689,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &738159721
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738159720}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 19.75
 --- !u!212 &738159723
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8310,10 +8175,9 @@ GameObject:
   m_Component:
   - component: {fileID: 782972523}
   - component: {fileID: 782972524}
-  - component: {fileID: 782972525}
   m_Layer: 0
   m_Name: GameOverCollider (3)
-  m_TagString: Untagged
+  m_TagString: GameOverCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8378,30 +8242,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 24.377243, y: 2.8027954}
   m_EdgeRadius: 0
---- !u!114 &782972525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782972522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537108c05d99c8f448a8e19d405e7304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!4 &789190968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3762253920114619059, guid: ca587655dbae34946ae62617dcabd8bf, type: 3}
@@ -8971,7 +8811,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000030518, y: -0.0000054292}
-  m_SizeDelta: {x: 773, y: 435}
+  m_SizeDelta: {x: 800, y: 450.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &852465959
 MonoBehaviour:
@@ -9944,6 +9784,7 @@ Transform:
   m_Children:
   - {fileID: 313393130}
   - {fileID: 1497713338}
+  - {fileID: 1665307804}
   m_Father: {fileID: 373663197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &947676314
@@ -12233,7 +12074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1158622620
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12250,8 +12091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00003091, y: -47.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -47.9}
+  m_SizeDelta: {x: 654.9349, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158622621
 MonoBehaviour:
@@ -12273,7 +12114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU WIN
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12307,8 +12148,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -13950,15 +13791,17 @@ MonoBehaviour:
   cameraBorder: {fileID: 2137124693}
   cinemachine: {fileID: 2022629106}
   playButton: {fileID: 1474542874}
-  winText: {fileID: 1158622619}
+  winText: {fileID: 1158622621}
   logo: {fileID: 1391274316}
   game: {fileID: 373663196}
   background: {fileID: 375385793}
   player: {fileID: 408698299}
   gameOverScreen: {fileID: 852465957}
   postProcessingCamera: {fileID: 773656891}
-  timer: 0
+  dotFalling: {fileID: 649670682}
   chrono: {fileID: 1826110425}
+  timer: 0
+  isPlaying: 0
 --- !u!4 &1396868292
 Transform:
   m_ObjectHideFlags: 0
@@ -16133,107 +15976,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1603674452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1603674455}
-  - component: {fileID: 1603674454}
-  - component: {fileID: 1603674453}
-  m_Layer: 1
-  m_Name: CameraFollower
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1603674453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603674452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73481000b446c8847a946359d5d82536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {x: -270, y: -20, z: 0}
-  - {x: -235, y: 13, z: 0}
-  - {x: -217, y: 24, z: 0}
---- !u!212 &1603674454
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603674452}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -437878987
-  m_SortingLayer: 1
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 9da8cd40e958fec449afc8d68717dbb5, type: 3}
-  m_Color: {r: 0, g: 0.9799824, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1603674455
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603674452}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -271, y: -20.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1615123663
 GameObject:
   m_ObjectHideFlags: 0
@@ -16740,6 +16482,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1665307803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665307804}
+  - component: {fileID: 1665307805}
+  m_Layer: 0
+  m_Name: DotFallingCollider
+  m_TagString: Dot
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1665307804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665307803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 947676313}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1665307805
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665307803}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -35.30246, y: 15.396978}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.941101, y: 3.707161}
+  m_EdgeRadius: 0
 --- !u!1 &1673087278
 GameObject:
   m_ObjectHideFlags: 0
@@ -17831,10 +17650,9 @@ GameObject:
   - component: {fileID: 1786309743}
   - component: {fileID: 1786309745}
   - component: {fileID: 1786309744}
-  - component: {fileID: 1786309746}
   m_Layer: 0
   m_Name: In
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17951,30 +17769,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1786309746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786309742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d923c073cbb69443a7b7d21a5924e72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 2137124693}
-  cinemachine: {fileID: 2022629106}
-  playButton: {fileID: 1474542874}
-  winText: {fileID: 1158622619}
-  logo: {fileID: 1391274316}
-  game: {fileID: 373663196}
-  background: {fileID: 375385793}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 0}
 --- !u!1 &1793264684
 GameObject:
   m_ObjectHideFlags: 0
@@ -17985,10 +17779,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1793264685}
   - component: {fileID: 1793264687}
-  - component: {fileID: 1793264686}
   m_Layer: 0
   m_Name: GameOverCollider (5)
-  m_TagString: Untagged
+  m_TagString: GameOverCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18008,30 +17801,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1351705770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1793264686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793264684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537108c05d99c8f448a8e19d405e7304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 852465957}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!61 &1793264687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18258,7 +18027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -18305,9 +18074,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1826110423}
+  - {fileID: 1158622620}
   - {fileID: 1474542875}
   - {fileID: 852465958}
-  - {fileID: 1158622620}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -18414,8 +18183,6 @@ GameObject:
   - component: {fileID: 1826110423}
   - component: {fileID: 1826110426}
   - component: {fileID: 1826110425}
-  - component: {fileID: 1826110424}
-  - component: {fileID: 1826110427}
   m_Layer: 5
   m_Name: Chrono
   m_TagString: Untagged
@@ -18442,20 +18209,6 @@ RectTransform:
   m_AnchoredPosition: {x: 341.62, y: 197}
   m_SizeDelta: {x: 89.7567, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1826110424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826110422}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e234296bef6c7f4d8df084374acbbc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!114 &1826110425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18498,30 +18251,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826110422}
   m_CullTransparentMesh: 1
---- !u!114 &1826110427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826110422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60121d4cc162f1a448be0a28f42ba45f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraBorder: {fileID: 0}
-  cinemachine: {fileID: 0}
-  playButton: {fileID: 0}
-  winText: {fileID: 0}
-  logo: {fileID: 0}
-  game: {fileID: 0}
-  background: {fileID: 0}
-  player: {fileID: 408698299}
-  gameOverScreen: {fileID: 0}
-  postProcessingCamera: {fileID: 773656891}
-  timer: 0
-  chrono: {fileID: 1826110425}
 --- !u!1 &1827780712
 GameObject:
   m_ObjectHideFlags: 0
@@ -20920,7 +20649,6 @@ SceneRoots:
   - {fileID: 1428978551}
   - {fileID: 1821094845}
   - {fileID: 169389338}
-  - {fileID: 1603674455}
   - {fileID: 2137124698}
   - {fileID: 2022629107}
   - {fileID: 773656895}
@@ -20928,7 +20656,7 @@ SceneRoots:
   - {fileID: 1391274317}
   - {fileID: 86844233}
   - {fileID: 556659242}
-  - {fileID: 649670685}
   - {fileID: 738159724}
+  - {fileID: 649670685}
   - {fileID: 373663197}
   - {fileID: 1085269944}
