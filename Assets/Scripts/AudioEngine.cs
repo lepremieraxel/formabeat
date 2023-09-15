@@ -19,9 +19,8 @@ public class AudioEngine : MonoBehaviour
     private void Start()
     {
         shapeManager.ShapeBeatStart("backgroundShape");
-        animatedPlatformManager.ShapeBeatStart("PlatformAnimated");
+        animatedPlatformManager.ShapeBeatStart();
         backgroundBehaviour.ColorWithBeat();
-
     }
 
     void Awake()

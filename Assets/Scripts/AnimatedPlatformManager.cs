@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class AnimatedPlatformManager : MonoBehaviour
 {
-    public void ShapeBeatStart(string tag)
+    public void ShapeBeatStart()
     {
-        foreach (var platformAnimated in GetComponentsInChildren<PlatformAnimatedBehaviour>())
+        foreach (var platformAnimated  in GetComponentsInChildren<PlatformAnimatedBehaviour>())
         {
-            platformAnimated.ScaleWithBeat();
+            if (platformAnimated.tag == "PlatformAnimated")
+            {
+                platformAnimated.ScaleWithBeat();
+            }
+            if (platformAnimated.tag == "PlatformAnimated2")
+            {
+                platformAnimated.ScaleWithBeat2();
+            }
         }
     }
 }
