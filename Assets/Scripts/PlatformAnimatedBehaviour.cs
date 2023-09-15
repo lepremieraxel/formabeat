@@ -20,4 +20,20 @@ public class PlatformAnimatedBehaviour : MonoBehaviour
         mySeq1.Append(transform.DOScaleY(15, 0.10f));
         mySeq1.Append(transform.DOScaleY(3, 0.38f));
     }
+
+    public void MoveWithBeat()
+    {
+        Sequence mySeq2 = DOTween.Sequence();
+        mySeq2.SetLoops(-1);
+        mySeq2.Append(transform.DOLocalMoveY(185f, 0.48f));
+        mySeq2.Append(transform.DOLocalMoveY(169.51f, 0.48f));
+    }
+
+    public void MoveWithBeat2()
+    {
+        Sequence mySeq3 = DOTween.Sequence();
+        mySeq3.SetLoops(-1);
+        mySeq3.Append(transform.DOLocalMoveY(186f, 0.48f));
+        mySeq3.Append(transform.DOLocalMoveY(202f, 0.48f));
+    }
 }

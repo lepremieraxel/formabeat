@@ -13,6 +13,9 @@ TagManager:
   - GameOverCollider
   - Win
   - Dot
+  - PlatformAnimated3
+  - PlatformAnimated4
+  - PlatformAnimated5
   layers:
   - Default
   - TransparentFX

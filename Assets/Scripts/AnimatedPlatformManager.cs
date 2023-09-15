@@ -16,6 +16,14 @@ public class AnimatedPlatformManager : MonoBehaviour
             {
                 platformAnimated.ScaleWithBeat2();
             }
+            if (platformAnimated.tag == "PlatformAnimated3")
+            {
+                platformAnimated.MoveWithBeat();
+            }
+            if (platformAnimated.tag == "PlatformAnimated4")
+            {
+                platformAnimated.MoveWithBeat2();
+            }
         }
     }
 }
